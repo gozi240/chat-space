@@ -5,7 +5,7 @@
         = current_user.name
       %ul.header-box__icon
         %li.header-box__icon__new-groups
-          = link_to "#"  do
+          = link_to new_group_path do
             = icon('far', 'edit', class: 'icon')
         %li.header-box__icon__edit-user
           = link_to edit_user_path(current_user) do
@@ -14,16 +14,10 @@
 
 
   .groups
-    = link_to "#", class:"group" do
+    - current_user.groups.each do |group|
       .group
-        %p.group__group-name
-          New-group
-        %p.group__latest-massage
-          まだメッセージがありません
-
-    = link_to "#", class:"group" do
-      .group
-        %p.group__group-name
-          New-gropu2
-        %p.group__latest-massage
-          まだメッセージがありません
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。

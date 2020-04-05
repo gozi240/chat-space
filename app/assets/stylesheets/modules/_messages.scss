@@ -53,14 +53,15 @@ a{
     overflow: scroll;
     box-sizing: border-box;
     .group{
-      color: white;
       text-decoration: none;
       margin-bottom: 40px;
-      &__group-name{
+      &__name{
+        color: white;
         font-size: 15px;
         margin-bottom: 5px;
       }
-      &__latest-massage{
+      &__message{
+        color: white;
         font-size: 11px;
       }
     }
