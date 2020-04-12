@@ -2,18 +2,25 @@
   .main-header
     .main-header__left-box
       %h2.main-header__left-box__current-group
-        = @group.name
+        テストチャット
       %ul.main-header__left-box__member-list
-        Members:&nbsp
-        - @group.users.each do |user|
-          %li.main-header__left-box__member-list__member
-            = user.name
-    = link_to edit_group_path(@group) do
-      Edit
+        member : 
+        %li.main-header__left-box__member-list__member
+        ユウスケ
+    =link_to "#" do
+      .main-header__edit-btn
+        Edit
 
   .messages
-     = render @mwssages
-        
+    .message
+      .message__upper-info
+        %p.message__uppernfo__talker
+          = @group.name
+        %p.message__upper-info__date
+          
+      %p.message__text
+        こんにちは
+
   .form
     %form
       .input-box

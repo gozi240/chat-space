@@ -4,12 +4,12 @@
       %h2.main-header__left-box__current-group
         = @group.name
       %ul.main-header__left-box__member-list
-        Members:&nbsp
-        - @group.users.each do |user|
-          %li.main-header__left-box__member-list__member
-            = user.name
-    = link_to edit_group_path(@group) do
-      Edit
+        member : 
+        %li.main-header__left-box__member-list__member
+        ユウスケ
+    =link_to "#" do
+      .main-header__edit-btn
+        Edit
 
   .messages
      = render @mwssages

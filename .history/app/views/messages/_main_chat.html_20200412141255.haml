@@ -6,10 +6,11 @@
       %ul.main-header__left-box__member-list
         Members:&nbsp
         - @group.users.each do |user|
-          %li.main-header__left-box__member-list__member
-            = user.name
-    = link_to edit_group_path(@group) do
-      Edit
+        %li.main-header__left-box__member-list__member
+        
+    =link_to "#" do
+      .main-header__edit-btn
+        Edit
 
   .messages
      = render @mwssages
