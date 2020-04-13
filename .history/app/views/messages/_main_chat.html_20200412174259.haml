@@ -4,7 +4,7 @@
       %h2.main-header__left-box__current-group
         = @group.name
       %ul.main-header__left-box__member-list
-        Members: &nbsp
+        Members:&nbsp
         - @group.users.each do |user|
           %li.main-header__left-box__member-list__member
             = user.name
@@ -17,7 +17,7 @@
         
   .form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'form__message', placeholder: '  type a message'
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do
           = icon('fas', 'image', class: 'icon')
