@@ -8,10 +8,9 @@ class MessagesController < ApplicationController
 
   def create
     @message = @group.messages.new(message_params)
-    if @message.save
-      respond_to do |format|
+    if @message.have
+      respond_to do |forma|
         format.json
-      end
     else
       @messages = @group.messages.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'
