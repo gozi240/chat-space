@@ -91,9 +91,10 @@ li {
     display: block;
   }
   &__name {
-    float: left;
+    // float: left;
   }
   &__btn {
+    // float: right;
     display: inline-block;
     cursor: pointer;
     &--add {
