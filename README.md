@@ -1,3 +1,11 @@
+# memo
+ieval "$(rbenv init -)"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+export AWS_ACCESS_KEY_ID='AKIAZSTURMVAD4FZLY7E'
+export AWS_SECRET_ACCESS_KEY='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'
+
+
 # chat-space DB設計について
 ## 必要な4テーブル
 
