@@ -43,7 +43,6 @@ a{
       }
     }
   }
-
   .groups{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
@@ -65,6 +64,7 @@ a{
     }
   }
 }
+
 
 // ここからmain-chat
 .chat-main {
@@ -110,8 +110,9 @@ a{
     height: calc(100vh - 190px);
     padding: 40px 46px;
     overflow: scroll;
+    .message{
+      padding-bottom: 40px;
       .upper-message{
-        padding-bottom: 40px;
         display: flex;
         margin-bottom: 10px;
           &__user-name{
